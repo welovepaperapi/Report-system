@@ -1,0 +1,10 @@
+name: ReportSystemBungee
+version: 1.0.0-SNAPSHOT
+main: me.welovepaperapi.reports.bungee.ReportBungeePlugin
+author: WeLovePaperAPI
+description: BungeeCord Login-Reminder für das Report-System
+
+permissions:
+  reports.admin:
+    description: Erlaubt Verwaltung von Reports
+    default: op

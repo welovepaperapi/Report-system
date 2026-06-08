@@ -1,0 +1,12 @@
+mongo:
+  uri: "mongodb://localhost:27017"
+  database: "reports"
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+
+server-name: "bungee-proxy"
+
+bedrock-prefix: "."

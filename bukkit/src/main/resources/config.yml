@@ -1,0 +1,22 @@
+# ReportSystem Konfiguration
+
+mongo:
+  uri: "mongodb://localhost:27017"
+  database: "reports"
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+
+# Name dieses Servers (BSP cb-1 wenn es im Plugins Foulder von cb-1 liegt)
+server-name: "server1"
+
+# Prefix für Bedrock-Spieler
+bedrock-prefix: "."
+
+# Erlaubte Server (leer=alle)
+allowed-servers: []
+
+# Debug-Modus
+debug: false

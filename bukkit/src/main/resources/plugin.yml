@@ -1,0 +1,40 @@
+name: ReportSystem
+version: 1.0.0-SNAPSHOT
+main: me.welovepaperapi.reports.bukkit.ReportPlugin
+api-version: 1.21
+author: WeLovePaperAPI
+description: Server-übergreifendes Report-System
+
+softdepend:
+  - floodgate
+  - SmartInvs
+
+commands:
+  report:
+    description: Melde einen Spieler
+    usage: /report [spieler|resolve|reject|details|stats]
+    aliases: [rp]
+  reports:
+    description: Verwalte Reports
+    usage: /reports
+    aliases: [rps]
+
+permissions:
+  reports.*:
+    description: Alle Report-Berechtigungen
+    default: op
+    children:
+      reports.use: true
+      reports.admin: true
+      reports.notify: true
+  reports.use:
+    description: Erlaubt das Erstellen von Reports
+    default: true
+  reports.admin:
+    description: Erlaubt die Verwaltung von Reports
+    default: op
+    children:
+      reports.use: true
+  reports.notify:
+    description: Erhält Benachrichtigungen über neue Reports
+    default: op
